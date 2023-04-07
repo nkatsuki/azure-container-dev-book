@@ -18,4 +18,9 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+	@RequestMapping("/hey")
+	public String hey() {
+		var msg = "Hey yo";
+		return msg;
+	}
 }
